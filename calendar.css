@@ -47,6 +47,7 @@ body {
   height: auto;
   display: block;
 }
+
 /***************************** CALENDAR HEADER END *****************************/
 
 /**************************** TEXT START + KNAP *****************************/
@@ -104,6 +105,17 @@ body {
   letter-spacing: 0.05em;
   margin-bottom: 1.2rem;
 }
+@media (max-width: 700px) {
+  .calendar-subscribe-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendar-subscribe-header button {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
 /**************************** TEXT + KNAP END *****************************/
 
 /**************************** BACK LINK START *****************************/
@@ -123,16 +135,16 @@ body {
 .calendar-back a:hover {
   color: #0433ff;
 }
-/**************************** BACK LINK END *****************************/
 
-@media (max-width: 700px) {
-  .calendar-subscribe-header {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 600px) {
+  .calendar-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
   }
 
-  .calendar-subscribe-header button {
-    margin-top: 1rem;
-    margin-left: 0;
+  .calendar-back a {
+    display: inline-block;
   }
 }
+/**************************** BACK LINK END *****************************/

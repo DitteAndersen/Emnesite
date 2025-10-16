@@ -49,6 +49,17 @@ body {
   height: auto;
   display: block;
 }
+@media (max-width: 600px) {
+  .hero {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hero img {
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+}
 /**************************** HERO END *****************************/
 /**************************** INTRO START *****************************/
 
@@ -90,9 +101,9 @@ body {
 
 /**************************** INTRO END *****************************/
 
-/**************************** Subscribe box*****************************/
+/**************************** SUBSCRIBE START *****************************/
 
-/**************************** Subscribe box END *****************************/
+/**************************** SUBSCRIBE END *****************************/
 
 /**************************** BACK LINK *****************************/
 .About-back {
@@ -112,4 +123,15 @@ body {
   color: #0433ff;
 }
 
+@media (max-width: 600px) {
+  .About-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .About-back a {
+    display: inline-block;
+  }
+}
 /**************************** BACK LINK END *****************************/

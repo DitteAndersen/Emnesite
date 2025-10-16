@@ -43,7 +43,7 @@ nav {
 .menu a {
   display: block;
   padding: 25px 10px 0 10px;
-  color: #000;
+  color: black;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
@@ -277,7 +277,7 @@ nav {
     top: 94px;
     left: 0;
     width: 100%;
-    background: #f6f4ef;
+    background: #faf7f2;
     z-index: 1;
   }
   nav.active .menu li {
@@ -301,6 +301,10 @@ nav {
   .grid_3col_1-1-1 {
     grid-template-columns: 1fr;
     padding: 0 12px;
+  }
+  .hero img {
+    height: 300px; /* gør billedet højere på mobil */
+    object-fit: cover; /* sørger for at det ikke bliver forvrænget */
   }
 }
 

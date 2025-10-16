@@ -126,6 +126,7 @@ body {
   max-width: 1100px;
   margin: 3rem;
   padding: 0 2rem;
+  margin-left: 1rem;
 }
 
 .events-back a {
@@ -136,5 +137,17 @@ body {
 }
 .events-back a:hover {
   color: #0433ff;
+}
+
+@media (max-width: 600px) {
+  .events-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .events-back a {
+    display: inline-block;
+  }
 }
 /**************************** BACK LINK END *****************************/
